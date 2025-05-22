@@ -2,7 +2,8 @@ package gluamapper
 
 import (
 	"fmt"
-	"github.com/yuin/gopher-lua"
+
+	lua "github.com/epikur-io/gopher-lua"
 )
 
 func ExampleMap() {

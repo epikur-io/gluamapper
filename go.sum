@@ -1,0 +1,4 @@
+github.com/epikur-io/go-mapstructure/v3 v3.0.0 h1:92yYrbgkZHTlL7WX01SGbd6cSfgC1kHnBFBJFFxjNLU=
+github.com/epikur-io/go-mapstructure/v3 v3.0.0/go.mod h1:3gE7rDI43fdUSZ+dGbDyedqhmUEU17dDAqY7UlDH8FQ=
+github.com/epikur-io/gopher-lua v1.2.2 h1:JWmrV+vbfLDIhSFZHa0+0BUA+dbMqnsxIzLLjAMRYV4=
+github.com/epikur-io/gopher-lua v1.2.2/go.mod h1:tSWAQSkm6ZTAQas0O28SaO1PwQkm1v9l41kmgCXUM2E=

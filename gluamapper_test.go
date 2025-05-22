@@ -1,10 +1,11 @@
 package gluamapper
 
 import (
-	"github.com/yuin/gopher-lua"
 	"path/filepath"
 	"runtime"
 	"testing"
+
+	lua "github.com/epikur-io/gopher-lua"
 )
 
 func errorIfNotEqual(t *testing.T, v1, v2 interface{}) {

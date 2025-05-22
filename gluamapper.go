@@ -4,10 +4,11 @@ package gluamapper
 import (
 	"errors"
 	"fmt"
-	"github.com/mitchellh/mapstructure"
-	"github.com/yuin/gopher-lua"
 	"regexp"
 	"strings"
+
+	"github.com/epikur-io/go-mapstructure/v3"
+	lua "github.com/epikur-io/gopher-lua"
 )
 
 // Option is a configuration that is used to create a new mapper.
@@ -63,13 +64,13 @@ func Map(tbl *lua.LTable, st interface{}) error {
 	return NewMapper(Option{}).Map(tbl, st)
 }
 
-
 // Id is an Option.NameFunc that returns given string as-is.
 func Id(s string) string {
 	return s
 }
 
 var camelre = regexp.MustCompile(`_([a-z])`)
+
 // ToUpperCamelCase is an Option.NameFunc that converts strings from snake case to upper camel case.
 func ToUpperCamelCase(s string) string {
 	return strings.ToUpper(string(s[0])) + camelre.ReplaceAllStringFunc(s[1:len(s)], func(s string) string { return strings.ToUpper(s[1:len(s)]) })
